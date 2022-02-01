@@ -1,18 +1,73 @@
 body {
-  background-color: cadetblue;
+  background-color: rgb(72, 113, 72);
 }
 
 header,
 footer {
-  color: chartreuse;
+  color: rgb(72, 113, 72);
 }
 
 header {
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid rgb(72, 113, 72);
+  padding-bottom: 20px;
 }
 
+header p {
+    margin: 0;
+}
+
+/* Site navigation-bar */
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid rgb(177, 177, 177);
+}
+
+.site-nav li a:hover {
+    background-color: rgb(177, 177, 177);
+}
+
+.site-nav li a {
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+}
+
+/* End site navigation-bar */
+
+/* Banner Start */
+
+.image-banner {
+    position: relative;
+    left: -3%;
+}
+
+.image-banner img {
+    display: block;
+    width: 60%;
+    height: 40%;
+}
+
+.banner-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.692);
+    width: 60%;
+    text-align: center;
+    
+}
+
+/* Banner End */
+
 footer {
-  border-top: 2px solid green;
+  border-top: 2px solid rgb(72, 113, 72);
   text-align: center;
 }
 
@@ -46,13 +101,10 @@ footer {
 .right-container {
     display: inline-block;
     width: 35%;
-    background-color: olive;
+    background-color: rgb(72, 113, 72);
     float: right;
     padding: 20px 40px;
     box-sizing: border-box;
 }
 
-.middle-container {
-    display: block;
-    width: 100%;
-}
+
