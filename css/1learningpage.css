@@ -1,0 +1,58 @@
+body {
+  background-color: cadetblue;
+}
+
+header,
+footer {
+  color: chartreuse;
+}
+
+header {
+  border-bottom: 2px solid green;
+}
+
+footer {
+  border-top: 2px solid green;
+  text-align: center;
+}
+
+.main-container {
+  width: 80%;
+  margin: 40px auto 40px auto;
+  background-color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.main-container h1 {
+  margin-bottom: 0;
+}
+
+.main-container header p {
+    margin-top: 0;
+    font-size: large;
+}
+
+.left-container {
+    display: inline-block;
+    width: 65%;
+    font-size: large;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.right-container {
+    display: inline-block;
+    width: 35%;
+    background-color: olive;
+    float: right;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.middle-container {
+    display: block;
+    width: 100%;
+}
