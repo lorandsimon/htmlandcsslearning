@@ -155,6 +155,8 @@ footer {
   background-image: linear-gradient(to bottom, rgb(72, 113, 72), #fff);
 }
 
+/* Design for mobile max 480px start */
+
 @media screen and (max-width: 480px) {
   body {
     background-color: rgb(255 255 255);
@@ -246,3 +248,101 @@ footer {
     margin: 0;
   }
 }
+
+/* Design for mobile max 480px end */
+
+/* Design for mobile max 900px start */
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: rgb(255 255 255);
+  }
+
+  .main-container {
+    width: 90%;
+    background-color: white;
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .left-container {
+    display: inline-block;
+    width: 100%;
+    font-size: large;
+    box-sizing: border-box;
+    padding-right: 0;
+    text-align: justify;
+  }
+
+  .right-container {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: rgb(72, 113, 72);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, rgb(72, 113, 72), #fff);
+    text-align: justify;
+  }
+
+  .image-banner {
+    position: relative;
+    left: unset;
+  }
+
+  .image-banner img {
+    width: 100%;
+    margin-top: 20px;
+    height: 100%;
+  }
+
+  .banner-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.692);
+    width: 100%;
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+
+  nav.ui-navbar ul li {
+    display: inline-block;
+    margin-right: 0;
+    width: 32%;
+  }
+
+  nav.ui-navbar ul li a {
+    margin: 0 auto;
+  }
+
+  header {
+    background-image: url(/img/hand-painted-watercolor-background-with-sky-clouds-shape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .site-nav {
+    margin-top: 10px;
+  }
+
+  .site-nav li {
+    width: 24%;
+  }
+
+  .site-nav li a {
+    margin: 0 auto;
+    color: black;
+  }
+
+  .main-container h1 {
+    margin: 0;
+  }
+}
+
+/* Design for tablets max 900px end */
