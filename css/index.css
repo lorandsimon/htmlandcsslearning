@@ -1,3 +1,8 @@
+body{
+    background-image: url(/img/hand-painted-watercolor-background-with-sky-clouds-shape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 h1{
     color: aqua;
 }

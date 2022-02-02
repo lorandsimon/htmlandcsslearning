@@ -9,59 +9,106 @@ footer {
 
 header {
   border-bottom: 2px solid rgb(72, 113, 72);
-  padding-bottom: 20px;
+  background-image: url(/img/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background.jpg);
+  background-repeat: no-repeat;
 }
 
 header p {
-    margin: 0;
+  margin: 0;
 }
 
 /* Site navigation-bar */
 
 .site-nav ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.site-nav li{
-    list-style: none;
-    display: inline-block;
-    padding: 5px 10px 5px 10px;
-    border: 2px solid rgb(177, 177, 177);
-}
-
-.site-nav li a:hover {
-    background-color: rgb(177, 177, 177);
+.site-nav li {
+  list-style: none;
+  display: inline-block;
 }
 
 .site-nav li a {
-    text-decoration: none;
-    padding: 5px 10px 5px 10px;
+  display: block;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  border: 2px solid rgb(177, 177, 177);
+  color: #fff;
+}
+
+.site-nav li a:hover {
+  background-color: rgb(177, 177, 177);
 }
 
 /* End site navigation-bar */
 
+/* Start ui navbar */
+
+nav.ui-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav.ui-navbar ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav.ui-navbar ul li a {
+  display: block;
+  text-indent: -999px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  background-image: url(/img/sprites.png);
+  background-repeat: no-repeat;
+}
+
+.ui-home a:hover {
+  background-position: -50px 0;
+}
+
+.ui-profile a {
+  background-position: 0 -50px;
+}
+
+.ui-profile a:hover {
+  background-position: -50px -50px;
+}
+
+.ui-settings a {
+  background-position: 0 -100px;
+}
+
+.ui-settings a:hover {
+  background-position: -50px -100px;
+}
+
+/* End ui navbar */
+
 /* Banner Start */
 
 .image-banner {
-    position: relative;
-    left: -3%;
+  position: relative;
+  left: -3%;
 }
 
 .image-banner img {
-    display: block;
-    width: 60%;
-    height: 40%;
+  display: block;
+  width: 60%;
+  height: 40%;
 }
 
 .banner-description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.692);
-    width: 60%;
-    text-align: center;
-    
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.692);
+  width: 60%;
+  text-align: center;
 }
 
 /* Banner End */
@@ -86,25 +133,116 @@ footer {
 }
 
 .main-container header p {
-    margin-top: 0;
-    font-size: large;
+  margin-top: 0;
+  font-size: large;
 }
 
 .left-container {
-    display: inline-block;
-    width: 65%;
-    font-size: large;
-    padding-right: 30px;
-    box-sizing: border-box;
+  display: inline-block;
+  width: 65%;
+  font-size: large;
+  padding-right: 30px;
+  box-sizing: border-box;
 }
 
 .right-container {
-    display: inline-block;
-    width: 35%;
-    background-color: rgb(72, 113, 72);
-    float: right;
-    padding: 20px 40px;
-    box-sizing: border-box;
+  display: inline-block;
+  width: 35%;
+  background-color: rgb(72, 113, 72);
+  float: right;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom, rgb(72, 113, 72), #fff);
 }
 
+@media screen and (max-width: 480px) {
+  body {
+    background-color: rgb(255 255 255);
+  }
 
+  .main-container {
+    width: 90%;
+    background-color: white;
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .left-container {
+    display: inline-block;
+    width: 100%;
+    font-size: large;
+    box-sizing: border-box;
+    padding-right: 0;
+    text-align: justify;
+  }
+
+  .right-container {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: rgb(72, 113, 72);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, rgb(72, 113, 72), #fff);
+    text-align: justify;
+  }
+
+  .image-banner {
+    position: relative;
+    left: unset;
+  }
+
+  .image-banner img {
+    width: 100%;
+    margin-top: 20px;
+    height: 100%;
+  }
+
+  .banner-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.692);
+    width: 100%;
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+
+  nav.ui-navbar ul li {
+    display: inline-block;
+    margin-right: 0;
+    width: 32%;
+  }
+
+  nav.ui-navbar ul li a {
+    margin: 0 auto;
+  }
+
+  header {
+    background-image: url(/img/hand-painted-watercolor-background-with-sky-clouds-shape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .site-nav {
+    margin-top: 10px;
+  }
+
+  .site-nav li {
+    width: 24%;
+  }
+
+  .site-nav li a {
+    margin: 0 auto;
+    color: black;
+  }
+
+  .main-container h1 {
+    margin: 0;
+  }
+}
